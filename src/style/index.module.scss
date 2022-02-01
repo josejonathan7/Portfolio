@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	/*a cada 1rem sera considerado 10px*/
+	font-size: 62.5%;;
+}
+
+html, body {
+	font-family: 'Roboto', 'Oxygen',
+	  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue' ,
+	  sans-serif, ;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: 100vh;
+}
+
+body {
+	font-size: 1.6rem;
+	background-color: #060608;
+	color: #E7DFDD;
+}
