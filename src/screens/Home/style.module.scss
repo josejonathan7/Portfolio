@@ -14,10 +14,78 @@
 }
 
 
-.textSectionContainer {
-	width: 50%;
-}
+
 
 .imageSectionContainer {
-	width: 50%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.HtmlCssImageContainer {
+	width: 48%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	img:last-child {
+		position: relative;
+		top: 1rem;
+		left: 18rem;
+	}
+}
+
+.vectorImageContainer {
+	width: 100%;
+
+	img:first-child {
+		position: relative;
+		top: 5rem;
+		left: 36rem;
+	}
+
+	img:nth-child(2) {
+		width: 60%;
+		transform: rotate(-20deg);
+		position: relative;
+		top: -20rem;
+		left: 34rem;
+	}
+
+	img:last-child {
+		position: relative;
+		top: -5.3rem;
+		left: -7rem;
+	}
+}
+
+
+.footerContainer {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+	button {
+		border-radius: 50%;
+		padding: 1rem;
+		border: none;
+	}
+
+	button:first-child {
+		background-color: #49a1fa;
+	}
+
+	button:nth-child(2) {
+		background-color: #1E90FF;
+	}
+
+	button:nth-child(3) {
+	background-color: palevioletred;
+	}
+
+	button:last-child {
+		background-color: #333333;
+	}
 }

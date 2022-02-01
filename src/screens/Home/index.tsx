@@ -1,6 +1,12 @@
 import React from "react";
-import { Menu } from "../../components";
+import { AboutMe, Menu } from "../../components";
 import style from "./style.module.scss";
+import Vector from "../../../assets/vector.png";
+import Css from "../../../assets/css.png";
+import Html from "../../../assets/html.png";
+import Js from "../../../assets/JS.png";
+import ImageTop from "../../../assets/image-top.png";
+import { BsTwitter, FaLinkedinIn, TiSocialInstagram, BiBasketball } from "react-icons/all";
 
 export function Home() {
 
@@ -9,22 +15,43 @@ export function Home() {
 			<Menu />
 
 			<main className={style.mainContainer}>
-				<section className={style.textSectionContainer}>
-					<h2>Desenvolvedor Front-End</h2>
 
-					<div>
-						<h1>José Jonathan</h1>
-						<p>Bem vindo ao meu mundo. Aqui é onde mostro todas as minhas experiencias e minha paixão que é, desenvover. Bora trocar conhecimento!</p>
-						<button>My Cv</button>
-					</div>
-				</section>
+				<AboutMe />
 
 				<section className={style.imageSectionContainer}>
+
+					<div className={style.HtmlCssImageContainer}>
+						<img src={Html} alt="Html icon image" />
+						<img src={Css} alt="Css icon image" />
+					</div>
+
+
+
+					<div className= {style.vectorImageContainer}>
+						<img src={ImageTop} alt="outra imagem com texto dizendo html e css" />
+						<img src={Vector} alt="imagem de fundo" />
+						<img src={Js} alt="JavaScript icon image" />
+					</div>
 
 				</section>
 
 
 			</main>
+
+			<footer className={style.footerContainer}>
+				<button>
+					<BsTwitter size={40} color="#FFFFFF" />
+				</button>
+				<button>
+					<FaLinkedinIn size={40} color="#FFFFFF" />
+				</button>
+				<button>
+					<BiBasketball size={40} color="#FFFFFF" />
+				</button>
+				<button>
+					<TiSocialInstagram size={40} color="#FFFFFF" />
+				</button>
+			</footer>
 
 		</div>
 	);
