@@ -13,7 +13,7 @@
 	padding-left: 10rem;
 
 	img {
-		max-height: 6rem;
+		max-height: 6rem;cursor: pointer;
 	}
 }
 
@@ -31,9 +31,13 @@
 		flex-direction: row;
 		justify-content: space-between;
 
-		p {
+		button {
+			background-color: transparent;
+			border: none;
 			font-size: 2.5rem;
 			font-weight: 500;
+			color: #E7DFDD;
+			cursor: pointer;
 		}
 	}
 }
@@ -46,4 +50,5 @@
 	font-size: 2rem;
 	padding: 1.3rem 3rem;
 	border: none;
+	cursor: pointer;
 }

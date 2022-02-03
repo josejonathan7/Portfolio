@@ -1,23 +1,25 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Logo from "../../../assets/logo.png";
 import style from "./style.module.scss";
 
 export function Menu () {
+	const navigate = useNavigate();
 
 	return (
 		<header className={style.container}>
 			<div className={style.imageContainer}>
-				<img src={Logo} alt="Logo da aplicação" />
+				<img src={Logo} alt="Logo da aplicação" onClick={() => navigate("/")} title="redirecionar para página inicial" />
 			</div>
 
 			<div className={style.textContainer}>
 				<div>
-					<p>Stacks</p>
-					<p>Projects</p>
-					<p>About Me</p>
+					<button onClick={() => navigate("/stack")} title="redirecionar para a página stacks">Stacks</button>
+					<button title="redirecionar para a página de projetos">Projects</button>
+					<button title="redirecionar para a página about me">About Me</button>
 				</div>
 
-				<button className={style.button}>Contact</button>
+				<button className={style.button} title="entrar em contato" >Contact</button>
 			</div>
 		</header>
 	);

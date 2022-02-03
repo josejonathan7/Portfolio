@@ -10,6 +10,7 @@ import { BsTwitter, FaLinkedinIn, TiSocialInstagram, BiBasketball } from "react-
 
 export function Home() {
 
+
 	return (
 		<div className={style.container}>
 			<Menu />
