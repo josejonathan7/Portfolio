@@ -14,9 +14,9 @@ export function Menu () {
 
 			<div className={style.textContainer}>
 				<div>
-					<button onClick={() => navigate("/stack")} title="redirecionar para a página stacks">Stacks</button>
-					<button title="redirecionar para a página de projetos">Projects</button>
-					<button title="redirecionar para a página about me">About Me</button>
+					<button onClick={() => navigate("/stacks")} title="redirecionar para a página stacks">Stacks</button>
+					<button onClick={() => navigate("/projects")} title="redirecionar para a página de projetos">Projects</button>
+					<button onClick={() => navigate("/about")} title="redirecionar para a página about me">About Me</button>
 				</div>
 
 				<button className={style.button} title="entrar em contato" >Contact</button>

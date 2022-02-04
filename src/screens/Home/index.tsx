@@ -1,12 +1,12 @@
 import React from "react";
-import { AboutMe, Menu } from "../../components";
+import { AboutMe, Footer, Menu } from "../../components";
 import style from "./style.module.scss";
 import Vector from "../../../assets/vector.png";
 import Css from "../../../assets/css.png";
 import Html from "../../../assets/html.png";
 import Js from "../../../assets/JS.png";
 import ImageTop from "../../../assets/image-top.png";
-import { BsTwitter, FaLinkedinIn, TiSocialInstagram, BiBasketball } from "react-icons/all";
+
 
 export function Home() {
 
@@ -39,20 +39,7 @@ export function Home() {
 
 			</main>
 
-			<footer className={style.footerContainer}>
-				<button>
-					<BsTwitter size={40} color="#FFFFFF" />
-				</button>
-				<button>
-					<FaLinkedinIn size={40} color="#FFFFFF" />
-				</button>
-				<button>
-					<BiBasketball size={40} color="#FFFFFF" />
-				</button>
-				<button>
-					<TiSocialInstagram size={40} color="#FFFFFF" />
-				</button>
-			</footer>
+			<Footer />
 
 		</div>
 	);

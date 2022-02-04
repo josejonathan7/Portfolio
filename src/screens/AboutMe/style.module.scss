@@ -1,0 +1,142 @@
+.container {
+	width: 100%;
+	background-color: #333333;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5rem;
+
+	h1 {
+		width: 82%;
+		font-size: 4rem;
+	}
+}
+
+.mainContainer {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 5rem;
+	background-image: url("../../../assets/vector.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sectionContainer {
+	width: 100%;
+	background-color: #060608;
+	padding: 5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+
+	h2 {
+		font-size: 5rem;
+		color: #23BE53;
+	}
+
+}
+
+.textIconContainer {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.textContainer {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+	font-size: 2.5rem;
+
+	p {
+		width: 70%;
+	}
+}
+
+.listContainer {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+
+	li::before {
+		content: "•"; color: #23BE53;
+		display: inline-block;
+		width: 1em;
+		margin-left: -1em;
+	}
+}
+
+.iconsContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+.footer {
+	width: 100%;
+	background-color: #23BE53;
+	border-radius: 0 0 1.6rem 1.6rem;
+	height: 6rem;
+}
+
+
+.footercontainer {
+	background-color: #23BE53;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 3rem;
+
+	p {
+		width: 40%;
+		font-size: 3rem;
+	}
+}
+
+.footerImageContainer {
+	width: 30%;
+	display: flex;
+	padding-left: 10rem;
+
+	img {
+		max-height: 6rem;
+		cursor: pointer;
+	}
+}
+
+.footerButtonsContainer {
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding-bottom: 2rem;
+
+	button {
+		border-radius: 50%;
+		padding: 1rem;
+		border: none;
+	}
+
+	button:first-child {
+		background-color: #49a1fa;
+	}
+
+	button:nth-child(2) {
+		background-color: #1E90FF;
+	}
+
+	button:nth-child(3) {
+	background-color: palevioletred;
+	}
+
+	button:last-child {
+		background-color: #333333;
+	}
+}

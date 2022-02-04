@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "./screens/Home";
-import { Stacks } from "./screens/Stacks";
+import { Home, AboutMe, Projects, Stacks } from "./screens";
 
 function App() {
 
@@ -9,7 +8,9 @@ function App() {
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/stack" element={<Stacks />} />
+				<Route path="/stacks" element={<Stacks />} />
+				<Route path="/projects" element={<Projects />} />
+				<Route path="/about" element={<AboutMe />} />
 			</Routes>
 		</BrowserRouter>
 	);

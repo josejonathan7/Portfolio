@@ -1,0 +1,30 @@
+
+.footerContainer {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding-bottom: 2rem;
+
+	button {
+		border-radius: 50%;
+		padding: 1rem;
+		border: none;
+	}
+
+	button:first-child {
+		background-color: #49a1fa;
+	}
+
+	button:nth-child(2) {
+		background-color: #1E90FF;
+	}
+
+	button:nth-child(3) {
+	background-color: palevioletred;
+	}
+
+	button:last-child {
+		background-color: #333333;
+	}
+}
