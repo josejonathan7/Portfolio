@@ -1,4 +1,4 @@
-export * from "./Menu";
+export * from "./Header";
 export * from "./AboutMe";
 export * from "./StacksInformation";
 export * from "./Footer";

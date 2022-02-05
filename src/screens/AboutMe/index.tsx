@@ -1,7 +1,7 @@
 import React from "react";
-import { Menu } from "../../components";
+import { Header } from "../../components";
 import style from "./style.module.scss";
-import { SiJavascript,  SiTypescript, FaNodeJs, SiPostgresql, DiReact, BsTwitter, FaLinkedinIn, BiBasketball, TiSocialInstagram } from "react-icons/all";
+import { SiJavascript,  SiTypescript, FaNodeJs, SiPostgresql, DiReact, FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/all";
 import Logo from "../../../assets/logo.png";
 
 export function AboutMe () {
@@ -9,7 +9,7 @@ export function AboutMe () {
 	return (
 		<div className={style.container}>
 
-			<Menu />
+			<Header />
 
 			<h1>About Me</h1>
 
@@ -50,18 +50,15 @@ export function AboutMe () {
 				<p>Feito com dedicação por José Jonathan</p>
 
 				<div className={style.footerButtonsContainer}>
-					<button>
-						<BsTwitter size={40} color="#FFFFFF" />
-					</button>
-					<button>
+					<a href="https://www.facebook.com/dhione.jonathan/" rel="noreferrer" target="_blank" title="redirecionar para o facebook">
+						<FaFacebookF  size={40} color="#FFFFFF" />
+					</a>
+					<a href="https://www.linkedin.com/in/jos%C3%A9-jonathan-6abaa4206/" rel="noreferrer" target="_blank" title="redirecioanr para o linkedin">
 						<FaLinkedinIn size={40} color="#FFFFFF" />
-					</button>
-					<button>
-						<BiBasketball size={40} color="#FFFFFF" />
-					</button>
-					<button>
-						<TiSocialInstagram size={40} color="#FFFFFF" />
-					</button>
+					</a>
+					<a href="https://github.com/josejonathan7" rel="noreferrer" target="_blank" title="redirecionar para o github">
+						<FaGithub size={40} color="#FFFFFF" />
+					</a>
 				</div>
 			</footer>
 

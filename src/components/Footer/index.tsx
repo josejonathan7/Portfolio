@@ -1,23 +1,21 @@
 import React from "react";
-import { BsTwitter, FaLinkedinIn, TiSocialInstagram, BiBasketball } from "react-icons/all";
+import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/all";
+import { useNavigate } from "react-router-dom";
 import style from "./style.module.scss";
 
 export function Footer () {
 
 	return (
 		<footer className={style.footerContainer}>
-			<button>
-				<BsTwitter size={40} color="#FFFFFF" />
-			</button>
-			<button>
+			<a href="https://www.facebook.com/dhione.jonathan/" rel="noreferrer" target="_blank" title="redirecionar para o facebook">
+				<FaFacebookF  size={40} color="#FFFFFF" />
+			</a>
+			<a href="https://www.linkedin.com/in/jos%C3%A9-jonathan-6abaa4206/" rel="noreferrer" target="_blank" title="redirecioanr para o linkedin">
 				<FaLinkedinIn size={40} color="#FFFFFF" />
-			</button>
-			<button>
-				<BiBasketball size={40} color="#FFFFFF" />
-			</button>
-			<button>
-				<TiSocialInstagram size={40} color="#FFFFFF" />
-			</button>
+			</a>
+			<a href="https://github.com/josejonathan7" rel="noreferrer" target="_blank" title="redirecionar para o github">
+				<FaGithub size={40} color="#FFFFFF" />
+			</a>
 		</footer>
 	);
 }

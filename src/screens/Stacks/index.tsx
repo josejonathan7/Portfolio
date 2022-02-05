@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer, Menu, StacksInformation } from "../../components";
+import { Footer, Header, StacksInformation } from "../../components";
 import style from "./style.module.scss";
 import Vector from "../../../assets/vector.png";
 
@@ -9,7 +9,7 @@ export function Stacks () {
 
 	return (
 		<div className={style.container}>
-			<Menu />
+			<Header />
 
 			<h1>Stacks</h1>
 

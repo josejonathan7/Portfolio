@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutMe, Footer, Menu } from "../../components";
+import { AboutMe, Footer, Header } from "../../components";
 import style from "./style.module.scss";
 import Vector from "../../../assets/vector.png";
 import Css from "../../../assets/css.png";
@@ -13,7 +13,7 @@ export function Home() {
 
 	return (
 		<div className={style.container}>
-			<Menu />
+			<Header />
 
 			<main className={style.mainContainer}>
 

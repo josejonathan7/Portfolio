@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Logo from "../../../assets/logo.png";
 import style from "./style.module.scss";
 
-export function Menu () {
+export function Header () {
 	const navigate = useNavigate();
 
 	return (
