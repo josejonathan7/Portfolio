@@ -1,6 +1,5 @@
 import React from "react";
 import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/all";
-import { useNavigate } from "react-router-dom";
 import style from "./style.module.scss";
 
 export function Footer () {
