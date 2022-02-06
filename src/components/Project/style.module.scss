@@ -21,9 +21,15 @@
 	background-color: #060608;
 	border-radius: 1.6rem 1.6rem 0 0;
 	padding-bottom: 2rem;
+	height: 450px;
+
+	text-decoration: none;
+	color: #E7DFDD;
 
 	h2 {
+		width: 90%;
 		padding: 2rem 0 0 0;
+		text-align: center;
 	}
 
 }
@@ -54,4 +60,5 @@
 .text{
 	font-size: 2rem;
 	padding: 2rem;
+	text-align: center;
 }

@@ -1,0 +1,22 @@
+.selectBody {
+    width: 5%;
+    padding: 0.625rem;
+    text-align: center;
+    border-radius: 0.5rem;
+
+    &:hover{
+        filter: brightness(0.9);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .selectBody {
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width: 33.75rem) {
+    .selectBody {
+        width: 18%;
+    }
+}

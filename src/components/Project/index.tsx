@@ -11,7 +11,6 @@ interface IRepoData {
 
 export function Project ({ name, html_url, description }: IRepoData) {
 
-
 	return (
 		<section className={style.sectionContainer}>
 
