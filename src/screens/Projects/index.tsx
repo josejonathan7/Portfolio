@@ -24,7 +24,7 @@ export function Projects () {
 
 	useEffect(() => {
 
-		api.get<IRepoType[]>("josejonathan7/repos").then(({data}) => {
+		api.get<IRepoType[]>("josejonathan7/repos?page=2&per_page=30").then(({data}) => {
 			const repoData = data.map(value => {
 				return {
 					name: value.name,
@@ -58,14 +58,21 @@ export function Projects () {
 
 			<h1>Projects</h1>
 
-			<PaginationSelector itensPerPage={itensPerPage} setItensPerPage={setItensPerPage} />
-			<PaginationButton setCurrentPage={setCurrentPage} pages={pages} />
+			<div className={style.paginationContainer}>
+				<PaginationSelector itensPerPage={itensPerPage} setItensPerPage={setItensPerPage} />
+				<PaginationButton setCurrentPage={setCurrentPage} pages={pages} />
+			</div>
 
 			<main className={style.mainContainer}>
 
 				{currentItens.map(projectRender)}
 
 			</main>
+
+			<div className={style.paginationContainer}>
+				<PaginationSelector itensPerPage={itensPerPage} setItensPerPage={setItensPerPage} />
+				<PaginationButton setCurrentPage={setCurrentPage} pages={pages} />
+			</div>
 
 			<Footer />
 		</div>

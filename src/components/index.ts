@@ -1,5 +1,5 @@
 export * from "./Header";
-export * from "./AboutMe";
+export * from "./Presentation ";
 export * from "./StacksInformation";
 export * from "./Footer";
 export * from "./Project";

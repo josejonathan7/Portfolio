@@ -30,8 +30,12 @@
 		width: 90%;
 		padding: 2rem 0 0 0;
 		text-align: center;
+		word-break: break-word;
 	}
 
+	img {
+		width: 90%;
+	}
 }
 
 .headerContainer {
@@ -58,7 +62,13 @@
 }
 
 .text{
+	width: 100%;
 	font-size: 2rem;
 	padding: 2rem;
+	direction: ltr;
 	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-decoration: none;
+
 }

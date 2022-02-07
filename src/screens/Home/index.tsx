@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutMe, Footer, Header } from "../../components";
+import { Presentation, Footer, Header } from "../../components";
 import style from "./style.module.scss";
 import Vector from "../../../assets/vector.png";
 import Css from "../../../assets/css.png";
@@ -17,7 +17,7 @@ export function Home() {
 
 			<main className={style.mainContainer}>
 
-				<AboutMe />
+				<Presentation />
 
 				<section className={style.imageSectionContainer}>
 
