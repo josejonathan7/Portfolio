@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "./style.module.scss";
 import {FaGithub} from "react-icons/fa";
-import Playlist from "../../../assets/playlistProject.png";
+import defineImage from "../../utils/defineImage";
+import { MdOutlineSearchOff } from "react-icons/md";
 
 interface IRepoData {
 	name: string;
@@ -10,6 +11,12 @@ interface IRepoData {
 }
 
 export function Project ({ name, html_url, description }: IRepoData) {
+	const [image, setImage] = useState("");
+
+	console.log(name);
+	const imageName = defineImage(name);
+
+	setImage(imageName);
 
 	return (
 		<section className={style.sectionContainer}>
@@ -21,7 +28,9 @@ export function Project ({ name, html_url, description }: IRepoData) {
 					<p>&bull;</p>
 					<p>&bull;</p>
 				</header>
-				<img src={Playlist} alt="" />
+
+				{ image !== "notFound" ? <img src={`../../../assets${image}`} alt="" /> : <MdOutlineSearchOff />}
+
 
 				<h2>{name}</h2>
 
