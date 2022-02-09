@@ -3,6 +3,7 @@ import { Footer, Header, PaginationButton, PaginationSelector, Project } from ".
 import style from "./style.module.scss";
 import { api } from "../../services/api";
 import { useNavigate } from "react-router-dom";
+import defineImage from "../../utils/defineImage";
 
 interface IRepoType {
 	name: string;
@@ -24,7 +25,7 @@ export function Projects () {
 
 	useEffect(() => {
 
-		api.get<IRepoType[]>("josejonathan7/repos?page=2&per_page=30").then(({data}) => {
+		api.get<IRepoType[]>("josejonathan7/repos?page=1&per_page=50").then(({data}) => {
 			const repoData = data.map(value => {
 				return {
 					name: value.name,
@@ -45,10 +46,11 @@ export function Projects () {
 
 	useEffect(() => setCurrentPage(0), [itensPerPage]);
 
-	const projectRender = (value: IRepoType) => {
+	const projectRender = (value: IRepoType, index: number) => {
+		const imageName = defineImage(value.name);
 
 		return (
-			<Project name={value.name} html_url={value.html_url} description={value.description} />
+			<Project key={`Project-${index}`} name={value.name} html_url={value.html_url} description={value.description} image={imageName} />
 		);
 	};
 
