@@ -16,28 +16,16 @@ interface IStacksInformations {
 export function StacksInformation () {
 	const [stacks, setStacks] = useState<IStacksInformations[]>([
 		{
-			name: "JavaScript",
-			icon: <SiJavascript size={80} color="#FFFF00" style={{backgroundColor: "#000000"}} />,
-			projects: 16,
-			studyTime: "1 ano e 6 meses"
-		},
-		{
-			name: "Html",
-			icon: <img src={Html} alt="Html Icon" />,
-			projects: 9,
-			studyTime: "1 ano e 6 meses"
-		},
-		{
-			name: "Css/Sass",
-			icon: <img src={Css} alt="Css icon" />,
-			projects: 29,
-			studyTime: "1 ano e 6 meses"
-		},
-		{
 			name: "TypeScript",
 			icon: <SiTypescript size={80} color="#00BFFF" style={{backgroundColor: "#000000"}} />,
 			projects: 22,
 			studyTime: "8 meses"
+		},
+		{
+			name: "React",
+			icon: <DiReact size={80} color="#1E90FF" />,
+			projects: 13,
+			studyTime: "7 meses"
 		},
 		{
 			name: "Node",
@@ -64,10 +52,22 @@ export function StacksInformation () {
 			studyTime: "9 meses"
 		},
 		{
-			name: "React",
-			icon: <DiReact size={80} color="#1E90FF" />,
-			projects: 13,
-			studyTime: "7 meses"
+			name: "Html",
+			icon: <img src={Html} alt="Html Icon" />,
+			projects: 9,
+			studyTime: "1 ano e 6 meses"
+		},
+		{
+			name: "JavaScript",
+			icon: <SiJavascript size={80} color="#FFFF00" style={{backgroundColor: "#000000"}} />,
+			projects: 16,
+			studyTime: "1 ano e 6 meses"
+		},
+		{
+			name: "Css/Sass",
+			icon: <img src={Css} alt="Css icon" />,
+			projects: 29,
+			studyTime: "1 ano e 6 meses"
 		}
 	]);
 

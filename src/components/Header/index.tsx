@@ -19,7 +19,7 @@ export function Header () {
 					<button onClick={() => navigate("/about")} title="redirecionar para a página about me">About Me</button>
 				</div>
 
-				<button className={style.button} title="entrar em contato" >Contact</button>
+				<a href="https://www.linkedin.com/in/jos%C3%A9-jonathan-6abaa4206/" target="_blank" rel="noreferrer" className={style.link} title="entrar em contato" >Contact</a>
 			</div>
 		</header>
 	);

@@ -8,14 +8,15 @@ import defineImage from "../../utils/defineImage";
 interface IRepoType {
 	name: string;
 	html_url: string;
-	description: string
+	description: string;
+	archived: boolean;
 }
 
 export function Projects () {
 	const [repo, setRepo] = useState<IRepoType[]>([]);
 	const navigate = useNavigate();
 
-	const [ itensPerPage, setItensPerPage ] = useState(6);
+	const [ itensPerPage, setItensPerPage ] = useState(9);
 	const [ currentPage, setCurrentPage ] = useState(0);
 
 	const pages = Math.ceil(repo.length / itensPerPage);
@@ -26,13 +27,7 @@ export function Projects () {
 	useEffect(() => {
 
 		api.get<IRepoType[]>("josejonathan7/repos?page=1&per_page=50").then(({data}) => {
-			const repoData = data.map(value => {
-				return {
-					name: value.name,
-					html_url: value.html_url,
-					description: value.description
-				};
-			});
+			const repoData = data.filter(value => value.archived !== true);
 
 			setRepo(repoData);
 			// eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -40,7 +35,6 @@ export function Projects () {
 			alert("Limite de consultas diária ao github atingida");
 			navigate("/");
 		});
-
 
 	}, []);
 
