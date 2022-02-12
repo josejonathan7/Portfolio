@@ -44,3 +44,15 @@
 	text-align: center;
 	cursor: pointer;
 }
+
+@media only screen and (max-width: 540px) {
+	.textSectionContainer {
+		width: 100%;
+		padding-left: 0;
+		align-items: center;
+	}
+
+	.textDiv {
+		align-items: center;
+	}
+}

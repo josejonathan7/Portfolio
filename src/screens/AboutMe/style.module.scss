@@ -1,7 +1,6 @@
 .container {
 	width: 100%;
 	background-color: #333333;
-	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -62,6 +61,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
+	padding-left: 2.5rem;
 
 	li::before {
 		content: "•"; color: #23BE53;
@@ -75,15 +75,15 @@
 	display: flex;
 	flex-direction: column;
 	gap: 2.5rem;
+	max-height: 30rem;
 }
 
-.footer {
+.mainFooter {
 	width: 100%;
 	background-color: #23BE53;
 	border-radius: 0 0 1.6rem 1.6rem;
 	height: 6rem;
 }
-
 
 .footercontainer {
 	background-color: #23BE53;
@@ -122,6 +122,9 @@
 		border-radius: 50%;
 		padding: 1rem;
 		border: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	a:first-child {
@@ -138,5 +141,73 @@
 
 	a:last-child {
 		background-color: #333333;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.container {
+		min-height: 100vh;
+		overflow-y: hidden;
+	}
+
+	.mainContainer {
+		width: 90%;
+		padding-top: 0;
+	}
+
+	.sectionContainer {
+		padding: 3rem;
+
+		h2 {
+			font-size: 4rem;
+		}
+	}
+
+	.textContainer {
+		width: 100%;
+		font-size: 2rem;
+
+		p{
+			width: 90%;
+		}
+	}
+
+	.listContainer {
+		padding-left: 2rem;
+	}
+
+	.mainFooter{
+		height: 4.5rem;
+	}
+
+	.footercontainer {
+		padding: 2rem 0;
+
+		p {
+			font-size: 1.5rem;
+		}
+	}
+
+	.footerImageContainer {
+		padding-left: 0;
+
+		img {
+			width: 100%;
+			padding-left: 3rem;
+		}
+	}
+
+	.footerButtonsContainer {
+		padding-bottom: 0;
+
+		a {
+			padding: 0.5rem;
+
+			svg {
+				max-width: 1.5rem;
+				max-height: 1.5rem;
+			}
+
+		}
 	}
 }

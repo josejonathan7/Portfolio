@@ -39,7 +39,7 @@ export function AboutMe () {
 						</div>
 					</div>
 				</section>
-				<footer className={style.footer}></footer>
+				<footer className={style.mainFooter}></footer>
 			</main>
 
 			<footer className={style.footercontainer}>

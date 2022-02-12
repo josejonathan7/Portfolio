@@ -45,3 +45,28 @@
 		transform: rotate(-30deg);
 	}
 }
+
+@media only screen and (max-width: 540px){
+	.container {
+		min-height: 100vh;
+		overflow-y: hidden;
+	}
+
+	.mainContainer {
+		margin-bottom: 25rem;
+	}
+
+	.imageBackgroundContainer {
+		img {
+			width: 60%;
+			padding-left: 5rem;
+		}
+	}
+
+	.imageBackgroundContainerTwo{
+		img {
+			width: 60%;
+			padding-left: 5rem;
+		}
+	}
+}

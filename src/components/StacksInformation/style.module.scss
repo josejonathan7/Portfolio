@@ -6,8 +6,7 @@
 	display: grid;
 	column-gap: 12rem;
 	row-gap: 30rem;
-	grid-template-columns: 300px 300px 300px;
-	//grid-template-rows: auto auto auto;
+	grid-template-columns: 30rem 30rem 30rem;
 	justify-content: center;
 }
 
@@ -52,6 +51,59 @@
 		p {
 			font-size: 2rem;
 			font-weight: bold;
+		}
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.sectionContainer {
+		grid-template-columns: 48% 48%;
+		row-gap: 5%;
+		column-gap: 3rem;
+	}
+
+	.projectContainer{
+
+		&:nth-child(odd) {
+			top: 0;
+		}
+	}
+
+	.projectContainer:nth-child(7) {
+
+		img {
+			max-width: 6.5rem;
+			max-height: 6.5rem;
+		}
+	}
+
+	.projectBody {
+		padding: 2rem;
+		gap: 3rem;
+
+		svg {
+			max-width: 6rem;
+			max-height: 6rem;
+		}
+
+		img {
+			max-width: 11rem;
+			max-height: 11rem;
+		}
+	}
+
+	.projectInformationContainer {
+
+
+		span {
+			svg {
+				max-width: 4rem;
+				max-height: 4rem;
+			}
+
+			p {
+				font-size: 1.6rem;
+			}
 		}
 	}
 }
