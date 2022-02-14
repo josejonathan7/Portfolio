@@ -28,7 +28,7 @@ export function Project ({ name, html_url, description, image }: IRepoData) {
 
 				<h2>{name}</h2>
 
-				<abbr title={description ? description : "Desculpe! parece que esse repositório não tem uma descrição :("} className={style.text}> { description ? description : "Desculpe! parece que esse repositório não tem uma descrição :(" } </abbr>
+				<p title={description ? description : "Desculpe! parece que esse repositório não tem uma descrição :("} className={style.text}> { description ? description : "Desculpe! parece que esse repositório não tem uma descrição :(" } </p>
 			</a>
 			<footer>
 				<FaGithub size={40} color="#060608" />

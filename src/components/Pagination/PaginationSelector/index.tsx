@@ -13,7 +13,7 @@ export function PaginationSelector({ itensPerPage, setItensPerPage }: Props) {
 			<option value={9}>9</option>
 			<option value={12}>12</option>
 			<option value={15}>15</option>
-			<option value={20}>20</option>
+			<option value={21}>21</option>
 		</select>
 
 	);

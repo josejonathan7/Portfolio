@@ -32,3 +32,13 @@
 	flex-direction: row;
 	align-items: center;
 }
+
+
+@media only screen and (max-width: 540px) {
+
+	.mainContainer {
+		grid-template-columns: 30rem;
+		row-gap: 4rem;
+	}
+
+}
